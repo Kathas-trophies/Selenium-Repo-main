@@ -10,7 +10,7 @@ import os
 logging.basicConfig(
     level=logging.INFO, 
     format='%(asctime)s - %(levelname)s - %(message)s',
-    filename='login1_test.log',
+    filename='login4_test.log',
     filemode='w'
 )
 
@@ -32,13 +32,18 @@ def test_login_popup(driver):
         #driver.find_element(By.CLASS_NAME, "email").send_keys("Selenium25@gmail")
         #driver.find_element(By.CLASS_NAME, "password").send_keys("Y0uMade1t&3&&")
         #driver.find_element(By.ID, "login-btn").click()
-    #Test case 003: Valid details
+    #Test case 003: Invalid Password
+        #logging.info("Enter email and password")
+        #driver.find_element(By.CLASS_NAME, "email").send_keys("Selenium25@gmail.com")
+        #driver.find_element(By.CLASS_NAME, "password").send_keys("Y0uMade")
+        #driver.find_element(By.ID, "login-btn").click()
+    #Test case 004: Empty fields
         logging.info("Enter email and password")
-        driver.find_element(By.CLASS_NAME, "email").send_keys("Selenium25@gmail")
-        driver.find_element(By.CLASS_NAME, "password").send_keys("Y0uMade1t&3&&")
+        driver.find_element(By.CLASS_NAME, "email").send_keys("")
+        driver.find_element(By.CLASS_NAME, "password").send_keys("")
         driver.find_element(By.ID, "login-btn").click()
         #Take a screenshot
-        driver.save_screenshot("screenshot1_before_popup.png")
+        driver.save_screenshot("screenshot4_before_popup.png")
         logging.info("Screenshot saved before popup appears")
         #Wait for Popup & Validate
         wait = WebDriverWait(driver, 10)
@@ -54,7 +59,7 @@ def test_login_popup(driver):
 #Error handling
     except Exception as e:
         logging.error("An error occured during testting: %s", e)
-        driver.save_screenshot("error1_screenshot.png") #try jpg as well - failed
+        driver.save_screenshot("error4_screenshot.png") #try jpg as well - failed
         raise
 #Run the test
 chrome_driver = webdriver.Chrome()

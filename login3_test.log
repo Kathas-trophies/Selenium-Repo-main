@@ -1,0 +1,5 @@
+2025-05-15 12:48:54,965 - INFO - Opening file: /Users/kathi/Downloads/Selenium-Repo-main/Login_Page.html
+2025-05-15 12:48:55,018 - INFO - Enter email and password
+2025-05-15 12:48:55,395 - INFO - Screenshot saved before popup appears
+2025-05-15 12:48:55,423 - INFO - Popup message: Incorrect details!
+2025-05-15 12:48:55,427 - ERROR - An error occured during testting: Unexpected message: Incorrect details!
