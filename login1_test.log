@@ -1,0 +1,5 @@
+2025-05-15 12:16:18,021 - INFO - Opening file: /Users/kathi/Downloads/Selenium-Repo-main/Login_Page.html
+2025-05-15 12:16:18,078 - INFO - Enter email and password
+2025-05-15 12:16:18,442 - INFO - Screenshot saved before popup appears
+2025-05-15 12:16:18,463 - INFO - Popup message: Email must end with .com or .co.za
+2025-05-15 12:16:18,466 - ERROR - An error occured during testting: Unexpected message: Email must end with .com or .co.za
