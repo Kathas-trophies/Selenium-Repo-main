@@ -39,4 +39,4 @@ class KeywordLibrary:
             "xpath":By.XPATH,
             "css":By.CSS_SELECTOR
         }
-        return self.driver.find_element(locator_map[locator_type],[locator_value])
+        return self.driver.find_element(locator_map[locator_type],locator_value)

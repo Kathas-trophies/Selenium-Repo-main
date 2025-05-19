@@ -17,7 +17,7 @@ def run_test(csv_file):
             data = row["Data"]
             #Check existence of the method in the KeywordLibrary
             if hasattr(keywords,keyword): #hasattr chekcs if the class contains a method like the keyword
-                method = getattr #getatt gets the actual function so thwt w can call it later
+                method = getattr(keywords,keyword) #getatt gets the actual function so thwt w can call it later
                 #Conditional method calling
                 if locator_type and locator_value and data:
                     method(locator_type,locator_value,data)
@@ -29,3 +29,6 @@ def run_test(csv_file):
                     method()
             else:
                 print(f" Keyword is unknown: {keyword}")
+    driver.quit()
+if __name__ =="__main__":
+    run_test("loginKeys.csv")
