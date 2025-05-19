@@ -26,7 +26,7 @@ class KeywordLibrary:
             assert popup_message == expected_message, f"Expected message: '{popup_message}', got: '{popup_message}"
             print("The popup message has been verified.")
         except Exception as e:
-            print(f"The popup message has failed.{e}")
+            print("The popup message has failed.{e}")
     #Create the wait action
     def wait(self,seconds):
         time.sleep(int(seconds))
