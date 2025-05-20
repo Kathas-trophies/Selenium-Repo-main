@@ -32,4 +32,3 @@ def run_test(csv_file):
     driver.quit()
 if __name__ =="__main__":
     run_test("loginKeys.csv")
-
