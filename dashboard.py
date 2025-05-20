@@ -6,7 +6,7 @@ import time
 driver = webdriver.Chrome()
 
 try:
-    driver.get("/Users/kathi/Documents/04_Weiterbildung/2025/01_Bildungskarenz/03_Code-Factory/01_Software-Testing/Module_12_Exercises/Selenium-Repo-main/Dashboard.html")
+    driver.get("file:///Users/kathi/Documents/04_Weiterbildung/2025/01_Bildungskarenz/03_Code-Factory/01_Software-Testing/Module_12_Exercises/Selenium-Repo-main/Dashboard.html")
     time.sleep(2)
     #Testcase001: Check if the welcome message is displayed
     header = driver.find_element(By.TAG_NAME, 'h1')
